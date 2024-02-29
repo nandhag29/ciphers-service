@@ -9,6 +9,6 @@ def greetings(request):
 
 def encode(request, plaintext, shift): 
     parameters = dict(request.GET)
-    print (parameters)
+    print(parameters)
     cipher = caesar_encode(plaintext, shift) 
     return JsonResponse({"cipher": cipher})
